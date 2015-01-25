@@ -14,11 +14,15 @@
 table{max-width:1024px; margin:0 auto;}
 .i{font-style:italic;}
 .i th{font-style:normal;}
-td{min-height:20px;}
-.yep,.nope{width:30px; margin:0 auto; display:inherit;}
+td{min-height:20px; border-bottom:1px solid black;}
+.yep,.nope,.almost{width:30px; margin:0 auto; display:inherit;}
 h1{font-size:24pt;}
 h3{font-size:18pt;}
-.col{font-weight:bold; color:red;}
+.col{font-weight:bold; color:red}
+tr { border: 1px solid #ccc; }
+
+td[data-title="Descrizione"]{width:200px;}
+td[data-title="Info"]{width:200px;}
 
 /*
 http://css-tricks.com/responsive-data-tables/
@@ -101,7 +105,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">PAC e Regioni</td>
         <td data-title="Frequenza aggiornamento">Trimestrale</td>
-        <td data-title="Livello minimo">5 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -112,9 +116,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Giugno 2014</td>
         <td data-title="Chi">ISTAT - AgID</td>
         <td data-title="Frequenza aggiornamento">Semestrale</td>
-        <td data-title="Livello minimo">5 &#9733; / 4 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info" ></td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 4 &#8226;</td>
+        <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
+        <td data-title="Info" ><a href="http://www.istat.it/it/files/2011/01/cofog.pdf?title=Classificazione+spesa+pubblica+(Cofog)+-+13%2Fmag%2F2009+-+cofog.pdf">PDF ISTAT</a>, <a href="http://data.okfn.org/data/core/cofog">UN COFOG</a></td>
     </tr>
     <tr>
         <td data-title="Categoria">Dataset trasversali</td>
@@ -123,9 +127,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">ISTAT - AgID</td>
         <td data-title="Frequenza aggiornamento">Semestrale</td>
-        <td data-title="Livello minimo">5 &#9733; / 4 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 4 &#8226;</td>
+        <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
+        <td data-title="Info"><a href="http://cp2011.istat.it/">App ISTAT</a></td>
     </tr>
     <tr>
         <td data-title="Categoria">Salute e spesa sanitaria</td>
@@ -134,9 +138,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Maggio 2014</td>
         <td data-title="Chi">Ministero della Salute</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
+        <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
+        <td data-title="Info"><a href="http://www.salute.gov.it/portale/temi/p2_6.jsp?lingua=italiano&id=3118&area=ricoveriOspedalieri&menu=vuoto">Su richiesta</a>, <a href="http://www.dati.salute.gov.it/dati/dettaglioDataset.jsp?menu=dati&idPag=69">Dati 2012</a></td>
     </tr>
     <tr>
         <td data-title="Categoria">Salute e spesa sanitaria</td>
@@ -145,7 +149,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Ministero della Salute</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">5 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -156,7 +160,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Ministero della Salute</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -167,7 +171,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Ministero della Salute</td>
         <td data-title="Frequenza aggiornamento">Trimestrale</td>
-        <td data-title="Livello minimo">5 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -178,7 +182,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Ministero della Salute</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -189,7 +193,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Giugno 2014</td>
         <td data-title="Chi">Ministero dei Beni Culturali e del Turismo – AgID</td>
         <td data-title="Frequenza aggiornamento">Trimestrale</td>
-        <td data-title="Livello minimo">5 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -200,7 +204,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Ministero degli Affari Esteri</td>
         <td data-title="Frequenza aggiornamento">Settimanale</td>
-        <td data-title="Livello minimo">5 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -211,7 +215,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">ISTAT</td>
         <td data-title="Frequenza aggiornamento">Decennale</td>
-        <td data-title="Livello minimo">5 &#9733; / 4 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 4 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -222,7 +226,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">INAIL</td>
         <td data-title="Frequenza aggiornamento">Semestrale</td>
-        <td data-title="Livello minimo">4 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">4 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -233,7 +237,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">ENEA</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -244,7 +248,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Ministero dell'Agricoltura - AgID</td>
         <td data-title="Frequenza aggiornamento">Ad ogni modifica appportata ai disciplinari</td>
-        <td data-title="Livello minimo">5 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -255,7 +259,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Settembre 2014</td>
         <td data-title="Chi">Ministero dell'Agricoltura</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">4 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">4 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -266,7 +270,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Ministero dell'Agricoltura</td>
         <td data-title="Frequenza aggiornamento">Giornaliero</td>
-        <td data-title="Livello minimo">4 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">4 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -277,7 +281,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Novembre 2014</td>
         <td data-title="Chi">Ministero dell'Agricoltura</td>
         <td data-title="Frequenza aggiornamento">Mensile</td>
-        <td data-title="Livello minimo">4 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">4 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -288,7 +292,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">MIUR - Regioni - AgID</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -299,7 +303,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Ottobre 2014</td>
         <td data-title="Chi">MIUR</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">5 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -310,7 +314,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Ottobre 2014</td>
         <td data-title="Chi">MIUR</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">5 &#9733; / 3 &#8226;</td>
+        <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -321,7 +325,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">MIUR</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -332,7 +336,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Settembre 2014</td>
         <td data-title="Chi">Infratel per conto del Ministero dello Sviluppo Economico</td>
         <td data-title="Frequenza aggiornamento">Mensile</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -343,7 +347,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Comuni e Agenzia del Demanio</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -354,7 +358,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Comuni e Agenzia del Demanio</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -365,7 +369,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Poste Italiane</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -376,7 +380,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Comuni, Province, Regioni e Province Autonome</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -387,7 +391,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">ISTAT, Agenzia delle Entrate, Comuni, Regioni e Province autonome</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -398,7 +402,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">Regioni e Province autonome</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
-        <td data-title="Livello minimo">3 &#9733; / 2 &#8226;</td>
+        <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
@@ -411,11 +415,14 @@ http://css-tricks.com/responsive-data-tables/
 <p class="col result">Dataset aperti: <span id="totOpen"></span> / <span id="tot"></span> = <span id="perc"></span>%</p>
 <script>
 var yepcount = document.getElementsByClassName("yep").length;
+var almostcount = document.getElementsByClassName("almost").length;
 var nopecount = document.getElementsByClassName("nope").length;
 var total=28;
-document.getElementById("totOpen").innerHTML=yepcount;
+
+var totOpen=yepcount+(almostcount/2);
+document.getElementById("totOpen").innerHTML=totOpen;
 document.getElementById("tot").innerHTML=total;
-document.getElementById("perc").innerHTML=yepcount/total;
+document.getElementById("perc").innerHTML=(totOpen/total).toFixed(2);
 </script>
 
 <h3>Credits</h3>
