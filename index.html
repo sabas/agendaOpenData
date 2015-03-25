@@ -2,14 +2,14 @@
 <html>
 
 <head>
-	<meta charset='UTF-8'>
-	
-	<title>Agenda nazionale Open Data</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    
+    <title>Agenda nazionale Open Data</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<style>
-	*{font-family:sans-serif; font-size:10pt;}
+    <style>
+    *{font-family:sans-serif; font-size:10pt;}
 
 table{max-width:1024px; margin:0 auto;}
 .i{font-style:italic;}
@@ -27,56 +27,56 @@ td[data-title="Info"]{width:200px;}
 /*
 http://css-tricks.com/responsive-data-tables/
 */
-	@media 
-	only screen and (max-width: 760px),
-	(min-device-width: 768px) and (max-device-width: 1024px)  {
-		table, thead, tbody, th, td, tr { 
-			display: block; 
-		}
-		thead tr { 
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-		
-		tr { border: 1px solid #ccc; }
-		
-		td { 
-			border: none;
-			border-bottom: 1px solid #eee; 
-			position: relative;
-			padding-left: 50%; 
-		}
-		
-		td:before { 
-			position: absolute;
-			top: 6px;
-			left: 6px;
-			width: 45%; 
-			padding-right: 10px; 
-			white-space: nowrap;
-		}
-		
-		td:before { content: attr(data-title); }
-	}
-	
-	@media only screen
-	and (min-device-width : 320px)
-	and (max-device-width : 480px) {
-		body { 
-			padding: 0; 
-			margin: 0; 
-			width: 320px; }
-		}
-	
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-		body { 
-			width: 495px; 
-		}
-	}
-	
-	</style>
-	<!--<![endif]-->
+    @media 
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { border: 1px solid #ccc; }
+        
+        td { 
+            border: none;
+            border-bottom: 1px solid #eee; 
+            position: relative;
+            padding-left: 50%; 
+        }
+        
+        td:before { 
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%; 
+            padding-right: 10px; 
+            white-space: nowrap;
+        }
+        
+        td:before { content: attr(data-title); }
+    }
+    
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        body { 
+            padding: 0; 
+            margin: 0; 
+            width: 320px; }
+        }
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body { 
+            width: 495px; 
+        }
+    }
+    
+    </style>
+    <!--<![endif]-->
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -92,14 +92,14 @@ http://css-tricks.com/responsive-data-tables/
 
 </head>
 <body>
-	<div id="page-wrap">
+    <div id="page-wrap">
 
 <h1>AGENDA NAZIONALE PER LA VALORIZZAZIONE DEL PATRIMONIO INFORMATIVO PUBBLICO (ANNO 2014)</h1>
 <p>Dataset “chiave” da rilasciare con relativo cronoprogramma</p>
 <p>Vai a "<a href="g8.html">Dataset “chiave” individuati dal piano nazionale del G8</a>".</p>
-	<table>
-		<thead>
-		<tr>
+    <table>
+        <thead>
+        <tr>
         <th>Categoria</th>
         <th>Dataset</th>
         <th>Descrizione</th>
@@ -109,10 +109,10 @@ http://css-tricks.com/responsive-data-tables/
         <th>Livello minimo</th>
         <th>Rilasciato?</th>
         <th>Info</th>
-		</tr>
-		</thead>
-		<tbody>
-    <tr>
+        </tr>
+        </thead>
+        <tbody>
+    <tr id="strutturapa">
         <td data-title="Categoria">Dataset trasversali</td>
         <td data-title="Dataset">Organizzazione delle PA</td>
         <td data-title="Descrizione">Dataset che descrive la struttura completa delle PA</td>
@@ -123,7 +123,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
         <td data-title="Info"><a href="http://spcdata.digitpa.gov.it/dataIPA.html">Indice della Pubblica Amministrazione</a></td>
     </tr>
-		<tr>
+    <tr id="cofog">
         <td data-title="Categoria">Dataset trasversali</td>
         <td data-title="Dataset">Classificazioni ufficiali</td>
         <td data-title="Descrizione">Classificazione internazionale della spesa pubblica (COFOG)</td>
@@ -134,7 +134,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
         <td data-title="Info" ><a href="http://spcdata.digitpa.gov.it/classificazioni.html">SPCData</a></td>
     </tr>
-    <tr>
+    <tr id="professioni">
         <td data-title="Categoria">Dataset trasversali</td>
         <td data-title="Dataset">Classificazioni ufficiali</td>
         <td data-title="Descrizione">Classificazione delle professioni</td>
@@ -145,7 +145,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
         <td data-title="Info"><a href="http://cp2011.istat.it/">App ISTAT</a></td>
     </tr>
-    <tr>
+    <tr id="dimissioni_ospedali">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
         <td data-title="Dataset">Scheda Dimissioni Ospedaliera</td>
         <td data-title="Descrizione">Il dataset contiene informazioni, opportunamente aggregate, relative ai pazienti dimessi dagli istituti di ricovero pubblici e privati in tutto il territorio nazionale</td>
@@ -156,7 +156,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
         <td data-title="Info"><a href="http://www.salute.gov.it/portale/temi/p2_6.jsp?lingua=italiano&id=3118&area=ricoveriOspedalieri&menu=vuoto">Su richiesta</a>, <a href="http://www.dati.salute.gov.it/dati/dettaglioDataset.jsp?menu=dati&idPag=69">Dati 2012</a></td>
     </tr>
-    <tr>
+    <tr id="strutture_ricovero">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
         <td data-title="Dataset">Strutture di ricovero</td>
         <td data-title="Descrizione">Il dataset contiene per ciascuna struttura ospedaliera pubblica ed equiparata i dati riferiti ai reparti, ai posti letto previsti ed utilizzati, al numero dei medici e degli infermieri, al numero di dimissioni e alle giornate di degenza</td>
@@ -167,7 +167,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
         <td data-title="Info"><a href="http://www.dati.salute.gov.it/dati/elencoDataset.jsp?menu=dati">Open Data Salute</a></td>
     </tr>
-    <tr>
+    <tr id="attivita_strutture">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
         <td data-title="Dataset">Attività delle strutture di ricovero</td>
         <td data-title="Descrizione">Il dataset contiene per ciascuna struttura ospedaliera pubblica ed equiparata e per ciascuna disciplina presente nella struttura gli indicatori di attività di ricovero: Numero di Dimissioni, Giornate di degenza, Interventi chirurgici, Degenza media ordinaria, Degenza media preoperatoria, Indice di Case Mix, Tasso utilizzo dei posti letto</td>
@@ -178,7 +178,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr>
+    <tr id="spese_medicinali">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
         <td data-title="Dataset">Spesa per i medicinali delle strutture pubbliche</td>
         <td data-title="Descrizione">Il dataset contiene, per ciascuna Regione e a livello nazionale, la composizione per classe di rimborsabilità della spesa per medicinali erogati nell'ambito dell'assistenza farmaceutica ospedaliera e ambulatoriale</td>
@@ -189,7 +189,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
         <td data-title="Info"><a href="http://www.dati.salute.gov.it/dati/dettaglioDataset.jsp?menu=dati&idPag=61">Open Data Salute</a></td>
     </tr>
-    <tr>
+    <tr id="attivita_118">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
         <td data-title="Dataset">Assistenza in emergenza sanitaria territoriale</td>
         <td data-title="Descrizione">Il dataset contiene, per ciascuna regione e a livello nazionale, le attività delle Centrali operative del Sistema 118 in termini di numero di prese in carico per totale missioni</td>
@@ -200,7 +200,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr>
+    <tr id="dbunico">
         <td data-title="Categoria">Cultura</td>
         <td data-title="Dataset">Eventi e luoghi della cultura</td>
         <td data-title="Descrizione">Dataset sulle schede anagrafiche degli eventi e dei luoghi della cultura</td>
@@ -211,7 +211,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
         <td data-title="Info"><a href="http://www.beniculturali.it/mibac/export/MiBAC/sito-MiBAC/MenuPrincipale/Trasparenza/Open-Data/index.html">Mibac</a> (no dump, 3 stelle)</td>
     </tr>
-    <tr>
+    <tr id="trattati">
         <td data-title="Categoria">Affari esteri</td>
         <td data-title="Dataset">Trattati internazionali</td>
         <td data-title="Descrizione">Dataset sugli accordi internazionali bilaterali e multilaterali ratificati dall'Italia</td>
@@ -222,7 +222,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info"><a href="http://itra.esteri.it/Default.aspx">Itra</a> (no dump)</td>
     </tr>
-    <tr>
+    <tr id="censimento">
         <td data-title="Categoria">Statistiche nazionali</td>
         <td data-title="Dataset">Indicatori di popolazione e abitazioni</td>
         <td data-title="Descrizione">I dati sono indicatori derivanti dal XV Censimento Generale della Popolazione e delle Abitazioni al livello territoriale delle sezioni di censimento</td>
@@ -233,7 +233,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr>
+    <tr id="malattie_professionali">
         <td data-title="Categoria">Welfare</td>
         <td data-title="Dataset">Malattie Professionali</td>
         <td data-title="Descrizione">Il dataset contiene le informazioni relative alle malattie professionali</td>
@@ -244,7 +244,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
         <td data-title="Info"><a href="http://dati.inail.it/opendata/default/Daticadenzasemestralemp/index.html">INAIL Open Data</a></td>
     </tr>
-    <tr>
+    <tr id="efficientamento_energetico">
         <td data-title="Categoria">Energia</td>
         <td data-title="Dataset">Efficientamento energetico</td>
         <td data-title="Descrizione">Il dataset contiene i risultati del rapporto annuale sull’efficientamento energetico suddiviso per Regioni</td>
@@ -255,7 +255,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr>
+    <tr id="DOP">
         <td data-title="Categoria">Agricoltura</td>
         <td data-title="Dataset">Marchi di qualità e disciplinari</td>
         <td data-title="Descrizione">Il dataset contiene informazioni riguardanti i disciplinari di alcuni prodotti DOP (e.g., formaggi, vino)</td>
@@ -266,7 +266,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr>
+    <tr id="agrit">
         <td data-title="Categoria">Agricoltura</td>
         <td data-title="Dataset">Bollettino Agrit</td>
         <td data-title="Descrizione">Il dataset contiene le previsioni di superficie e di rese delle principali colture agrarie italiane</td>
@@ -277,7 +277,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
         <td data-title="Info"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8131">OpenData Agricoltura</a></td>
     </tr>
-    <tr>
+    <tr id="agrometeo">
         <td data-title="Categoria">Agricoltura</td>
         <td data-title="Dataset">Agrometeo</td>
         <td data-title="Descrizione">Il dataset contiene le informazioni utilizzate per il monitoraggio della stagione agraria che includono le  statistiche meteorologiche pubblicate con i rispettivi valori climatici rilevati dalle stazioni RAN (Rete Agrometeorologica Nazionale)</td>
@@ -288,7 +288,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
         <td data-title="Info"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8121">OpenData Agricoltura</a></td>
     </tr>
-    <tr>
+    <tr id="giornale_di_bordo">
         <td data-title="Categoria">Agricoltura</td>
         <td data-title="Dataset">Giornale di Bordo (Pesca)</td>
         <td data-title="Descrizione">Il dataset contiene i dati relativi alle imbarcazioni usate, i materiali e le tecniche di pesca, la quantità, i luoghi e le acque territoriali nazionali e internazionali dove gli operatori marittimi effettuano le loro attività.</td>
@@ -299,7 +299,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
         <td data-title="Info"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8328">OpenData Agricoltura</a></td>
     </tr>
-    <tr>
+    <tr id="sicurezza_scuole">
         <td data-title="Categoria">Educazione</td>
         <td data-title="Dataset">Sicurezza strutture scolastiche</td>
         <td data-title="Descrizione">Il dataset contiene le informazioni riguardati la sicurezza degli edifici scolastici</td>
@@ -310,7 +310,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr class="i">
+    <tr class="i"  id="anagrafe_scuole">
         <td data-title="Categoria">Educazione</td>
         <td data-title="Dataset">Anagrafica delle strutture scolastiche</td>
         <td data-title="Descrizione">Il dataset contiene l’anagrafica delle scuole; per ciascuna scuola sono fornite anche indicazioni sulle attrezzature multimediali presenti</td>
@@ -321,7 +321,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
         <td data-title="Info"><a href="http://archivio.pubblica.istruzione.it/scuola_in_chiaro/open_data/index.html">Miur scuola in chiaro</a> (2012)</td>
     </tr>
-    <tr>
+    <tr id="spese_scuole">
         <td data-title="Categoria">Educazione</td>
         <td data-title="Dataset">Finanza delle strutture scolastiche</td>
         <td data-title="Descrizione">Il dataset contiene per ciascuna scuola le informazioni sulle entrate per fonti di finanziamento e la spesa complessiva sostenuta</td>
@@ -332,7 +332,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
         <td data-title="Info"><a href="http://archivio.pubblica.istruzione.it/scuola_in_chiaro/open_data/index.html">Miur scuola in chiaro</a> (2012)</td>
     </tr>
-    <tr class="i">
+    <tr class="i" id="libri">
         <td data-title="Categoria">Educazione</td>
         <td data-title="Dataset">Libri scolastici</td>
         <td data-title="Descrizione">Il dataset contiene le informazioni sulle adozioni di libri scolastici nelle strutture scolastiche</td>
@@ -343,7 +343,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr class="i">
+    <tr class="i" id="banda_larga">
         <td data-title="Categoria">Infrastrutture</td>
         <td data-title="Dataset">Banda larga e ultra larga</td>
         <td data-title="Descrizione">Il dataset contiene le informazioni relative ai piani e lo stato di dispiegamento della banda larga e ultralarga</td>
@@ -354,7 +354,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr class="i">
+    <tr class="i" id="edifici_pubblici">
         <td data-title="Categoria">Infrastrutture</td>
         <td data-title="Dataset">Anagrafe edifici pubblici e ad uso pubblico</td>
         <td data-title="Descrizione">Dati relativi agli edifici pubblici con relativa destinazione e modalità d’uso nonché informazioni sugli edifici privati destinati ad uso pubblico</td>
@@ -365,7 +365,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr class="i">
+    <tr class="i" id="vincoli">
         <td data-title="Categoria">Dati territoriali</td>
         <td data-title="Dataset">Vincoli territoriali</td>
         <td data-title="Descrizione">Dataset vettoriali e legende relativi ai vincoli paesaggistici, culturali, idrogeologici e ambientali</td>
@@ -376,7 +376,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr class="i">
+    <tr class="i" id="cap">
         <td data-title="Categoria">Dati territoriali</td>
         <td data-title="Dataset">Codici di Avviamento Postale (CAP)</td>
         <td data-title="Descrizione">Il dataset contiene le informazioni vettoriali complete delle aree CAP urbane</td>
@@ -387,7 +387,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info"><a href="http://www.poste-impresa.it/online/pmi/postali/accessori/cap_zone.shtml">Poste italiane</a></td>
     </tr>
-    <tr class="i">
+    <tr class="i" id="puc">
         <td data-title="Categoria">Dati territoriali</td>
         <td data-title="Dataset">Piani Comunali e Sovracomunali</td>
         <td data-title="Descrizione">Dataset vettoriali e legende relativi ai piani comunali e sovracomunali fondamentali per le proposte di intervento edile e urbanistico</td>
@@ -398,7 +398,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr class="i">
+    <tr class="i" id="grafo_strade">
         <td data-title="Categoria">Dati territoriali</td>
         <td data-title="Dataset">Grafo stradale</td>
         <td data-title="Descrizione">Dataset relativo al grafo stradale completo di toponomastica e numerazione civica</td>
@@ -409,7 +409,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-    <tr class="i">
+    <tr class="i" id="toponomastica">
         <td data-title="Categoria">Dati territoriali</td>
         <td data-title="Dataset">Toponomastica territoriale</td>
         <td data-title="Descrizione">Il dataset contiene i toponimi georeferenziati (località, monti, valli, golfi, ecc.)</td>
@@ -420,11 +420,11 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info">&nbsp;</td>
     </tr>
-		</tbody>
-	</table>
-	
-	</div>
-		
+        </tbody>
+    </table>
+    
+    </div>
+        
 <h3>Status</h3>
 <p class="col result">Dataset aperti: <span id="totOpen"></span> / <span id="tot"></span> = <span id="perc"></span>%</p>
 <script>
