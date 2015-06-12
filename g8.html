@@ -2,14 +2,14 @@
 <html>
 
 <head>
-	<meta charset='UTF-8'>
-	
-	<title>Agenda nazionale Open Data - G8</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    
+    <title>Agenda nazionale Open Data - G8</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<style>
-	*{font-family:sans-serif; font-size:10pt;}
+    <style>
+    *{font-family:sans-serif; font-size:10pt;}
 
 table{max-width:1024px; margin:0 auto;}
 .i{font-style:italic;}
@@ -27,67 +27,67 @@ td[data-title="Info"]{width:200px;}
 /*
 http://css-tricks.com/responsive-data-tables/
 */
-	@media 
-	only screen and (max-width: 760px),
-	(min-device-width: 768px) and (max-device-width: 1024px)  {
-		table, thead, tbody, th, td, tr { 
-			display: block; 
-		}
-		thead tr { 
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-		
-		tr { border: 1px solid #ccc; }
-		
-		td { 
-			border: none;
-			border-bottom: 1px solid #eee; 
-			position: relative;
-			padding-left: 50%; 
-		}
-		
-		td:before { 
-			position: absolute;
-			top: 6px;
-			left: 6px;
-			width: 45%; 
-			padding-right: 10px; 
-			white-space: nowrap;
-		}
-		
-		td:before { content: attr(data-title); }
-	}
-	
-	@media only screen
-	and (min-device-width : 320px)
-	and (max-device-width : 480px) {
-		body { 
-			padding: 0; 
-			margin: 0; 
-			width: 320px; }
-		}
-	
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-		body { 
-			width: 495px; 
-		}
-	}
-	
-	</style>
-	<!--<![endif]-->
+    @media 
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { border: 1px solid #ccc; }
+        
+        td { 
+            border: none;
+            border-bottom: 1px solid #eee; 
+            position: relative;
+            padding-left: 50%; 
+        }
+        
+        td:before { 
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%; 
+            padding-right: 10px; 
+            white-space: nowrap;
+        }
+        
+        td:before { content: attr(data-title); }
+    }
+    
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        body { 
+            padding: 0; 
+            margin: 0; 
+            width: 320px; }
+        }
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body { 
+            width: 495px; 
+        }
+    }
+    
+    </style>
+    <!--<![endif]-->
 
 </head>
 <body>
-	<div id="page-wrap">
+    <div id="page-wrap">
 
 <h1>AGENDA NAZIONALE PER LA VALORIZZAZIONE DEL PATRIMONIO INFORMATIVO PUBBLICO (ANNO 2014) - G8</h1>
 <p>Dataset “chiave” individuati dal piano nazionale del G8</p>
 <p>Vai a "<a href="index.html">Dataset “chiave” da rilasciare con relativo cronoprogramma</a>".</p>
-	<table>
-		<thead>
-		<tr>
+    <table>
+        <thead>
+        <tr>
         <th>Dataset</th>
         <th>Descrizione</th>
         <th>Termine previsto di rilascio</th>
@@ -95,10 +95,10 @@ http://css-tricks.com/responsive-data-tables/
         <th>Livello minimo</th>
         <th>Rilasciato?</th>
         <th>Info</th>
-		</tr>
-		</thead>
-		<tbody>
-    <tr>
+        </tr>
+        </thead>
+        <tbody>
+    <tr id="statistiche">
         <td data-title="Dataset">Statistiche nazionali</td>
         <td data-title="Descrizione">I dati sono relativi a diversi aspetti sociali ed economici del Paese</td>
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
@@ -107,7 +107,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info"></td>
     </tr>
-    <tr>
+    <tr id="mappe">
         <td data-title="Dataset">Mappe nazionali</td>
         <td data-title="Descrizione">DB Prior realizzato in ambito Intesa Stato, Regioni, Enti Locali e composto da cinque livelli informativi: viabilità stradale, viabilità ferroviaria, idrografia, ambiti amministrativi e centri abitati</td>
         <td data-title="Termine previsto di rilascio">Prima versione entro Dicembre 2014</td>
@@ -116,7 +116,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
         <td data-title="Info"><a href="http://www.centrointerregionale-gis.it/DBPrior/DBPrior1.asp">CISIS</a> (aggiornato al 2007, confini al 1991)</td>
     </tr>
-    <tr>
+    <tr id="elezioni">
         <td data-title="Dataset">Dati elettorali</td>
         <td data-title="Descrizione">I dati relativi ai risultati delle prossime elezioni europee su scala comunale</td>
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
@@ -125,7 +125,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
         <td data-title="Info"><a href="http://elezioni.interno.it/opendata.html">Ministero dell'Interno</a></td>
     </tr>
-    <tr>
+    <tr id="bilanci">
         <td data-title="Dataset">Bilanci pubblici</td>
         <td data-title="Descrizione">Principali documenti di bilancio con ulteriore ripartizione a livello di: • capitoli di bilancio • classificazione COFOG • centro di responsabilità</td>
         <td data-title="Termine previsto di rilascio">Luglio 2014</td>
@@ -134,7 +134,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info"></td>
     </tr>
-    <tr>
+    <tr id="normattiva">
         <td data-title="Dataset">Normattiva</td>
         <td data-title="Descrizione">Dati sulle leggi pubblicate dal 1933 al 1945</td>
         <td data-title="Termine previsto di rilascio">Ottobre 2014</td>
@@ -143,7 +143,7 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info"></td>
     </tr>
-    <tr>
+    <tr id="inquinanti">
         <td data-title="Dataset">Sostanze inquinanti per l’ambiente</td>
         <td data-title="Descrizione">Prima versione relativa alle emissioni dei principali sostanze inquinanti quali emissione di gas serra, di benzene, di metalli pesanti e monossido di carbonio.</td>
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
@@ -152,11 +152,11 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
         <td data-title="Info"></td>
     </tr>
-		</tbody>
-	</table>
-	
-	</div>
-		
+        </tbody>
+    </table>
+    
+    </div>
+        
 <h3>Status</h3>
 <p class="col result">Dataset aperti: <span id="totOpen"></span> / <span id="tot"></span> = <span id="perc"></span>%</p>
 <script>
