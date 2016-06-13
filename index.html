@@ -4,14 +4,14 @@
 <head>
     <meta charset='UTF-8'>
     
-    <title>Agenda nazionale Open Data</title>
+    <title>Monitoraggio dell'Agenda nazionale Open Data</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
     *{font-family:sans-serif; font-size:10pt;}
 
-table{max-width:1024px; margin:0 auto;}
+table{max-width:1280px; margin:0 auto;}
 .i{font-style:italic;}
 .i th{font-style:normal;}
 td{min-height:20px; border-bottom:1px solid black;}
@@ -22,7 +22,7 @@ h3{font-size:18pt;}
 tr { border: 1px solid #ccc; }
 
 td[data-title="Descrizione"]{width:200px;}
-td[data-title="Info"]{width:200px;}
+td[data-title="Link alla fonte"]{width:200px;}
 
 /*
 http://css-tricks.com/responsive-data-tables/
@@ -82,9 +82,11 @@ http://css-tricks.com/responsive-data-tables/
 <body>
     <div id="page-wrap">
 
-<h1>AGENDA NAZIONALE PER LA VALORIZZAZIONE DEL PATRIMONIO INFORMATIVO PUBBLICO (ANNO 2014)</h1>
-<p>Dataset “chiave” da rilasciare con relativo cronoprogramma</p>
-<p>Vai a "<a href="g8.html">Dataset “chiave” individuati dal piano nazionale del G8</a>".</p>
+<h1>Monitoraggio roadmap dell'agenda nazionale per la valorizzazione della PSI</h1>
+<p>Dataset “chiave” da rilasciare con relativo cronoprogramma, citati <a href="http://www.agid.gov.it/sites/default/files/documenti_indirizzo/agendanazionalepatrimioniopubblico2014.pdf" >alle pagine 15-20 del documento</a>.
+<br/>
+A che punto siamo con il rilascio dei dati? <br/>Aggiornamento del 13/6/2016 </p>
+<p>Nota: <a href="g8.html">a questa pagina</a> trovi il monitoraggio dei "Dataset “chiave” individuati dal piano nazionale del G8</a>".</p>
     <table>
         <thead>
         <tr>
@@ -96,7 +98,8 @@ http://css-tricks.com/responsive-data-tables/
         <th>Frequenza aggiornamento</th>
         <th>Livello minimo</th>
         <th>Rilasciato?</th>
-        <th>Info</th>
+        <th>Link alla fonte</th>
+        <th>Note</th>
         </tr>
         </thead>
         <tbody>
@@ -109,7 +112,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Trimestrale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
-        <td data-title="Info"><a href="http://spcdata.digitpa.gov.it/dataIPA.html">Indice della Pubblica Amministrazione</a></td>
+        <td data-title="Link alla fonte"><a href="http://spcdata.digitpa.gov.it/dataIPA.html">Indice della Pubblica Amministrazione</a></td>
+        <td data-title="Note">&nbsp;</td>
+
     </tr>
     <tr id="cofog">
         <td data-title="Categoria">Dataset trasversali</td>
@@ -120,7 +125,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Semestrale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 4 &#8226;</td>
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
-        <td data-title="Info" ><a href="http://spcdata.digitpa.gov.it/classificazioni.html">SPCData</a></td>
+        <td data-title="Link alla fonte" ><a href="http://spcdata.digitpa.gov.it/classificazioni.html">SPCData</a></td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr id="professioni">
         <td data-title="Categoria">Dataset trasversali</td>
@@ -131,7 +137,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Semestrale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 4 &#8226;</td>
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
-        <td data-title="Info"><a href="http://cp2011.istat.it/">App ISTAT</a></td>
+        <td data-title="Link alla fonte"><a href="http://www.istat.it/it/archivio/18132">cp11  ISTAT</a></td>
+        <td data-title="Note">aggiornato al 2013</td>
     </tr>
     <tr id="dimissioni_ospedali">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
@@ -142,7 +149,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
-        <td data-title="Info"><a href="http://www.salute.gov.it/portale/temi/p2_6.jsp?lingua=italiano&id=3118&area=ricoveriOspedalieri&menu=vuoto">Su richiesta</a>, <a href="http://www.dati.salute.gov.it/dati/dettaglioDataset.jsp?menu=dati&idPag=69">Dati 2012</a></td>
+        <td data-title="Link alla fonte"><a href="http://www.salute.gov.it/portale/temi/p2_6.jsp?lingua=italiano&id=3118&area=ricoveriOspedalieri&menu=vuoto">Su richiesta</a>, <a href="http://www.dati.salute.gov.it/dati/dettaglioDataset.jsp?menu=dati&idPag=69">Dati 2012</a></td>
+        <td data-title="Note">Non è stato più aggiornato</td>
     </tr>
     <tr id="strutture_ricovero">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
@@ -153,7 +161,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
-        <td data-title="Info"><a href="http://www.dati.salute.gov.it/dati/elencoDataset.jsp?menu=dati">Open Data Salute</a></td>
+        <td data-title="Link alla fonte"><a href="http://www.dati.salute.gov.it/dati/elencoDataset.jsp?menu=dati">Dataset divisi</a></td>
+        <td data-title="Note">I dati sono incompleti</td>
     </tr>
     <tr id="attivita_strutture">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
@@ -164,7 +173,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">Mai pubblicato</td>
     </tr>
     <tr id="spese_medicinali">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
@@ -175,7 +185,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Trimestrale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
-        <td data-title="Info"><a href="http://www.dati.salute.gov.it/dati/dettaglioDataset.jsp?menu=dati&idPag=61">Open Data Salute</a></td>
+        <td data-title="Link alla fonte"><a href="http://www.dati.salute.gov.it/dati/dettaglioDataset.jsp?menu=dati&idPag=61">Open Data Salute</a></td>
+        <td data-title="Note">Dati solo sul 2015, non c'è lo storico, il titolo del dataset riporta 2013</td>
     </tr>
     <tr id="attivita_118">
         <td data-title="Categoria">Salute e spesa sanitaria</td>
@@ -186,7 +197,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr id="dbunico">
         <td data-title="Categoria">Cultura</td>
@@ -197,7 +209,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Trimestrale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
-        <td data-title="Info"><a href="http://www.beniculturali.it/mibac/export/MiBAC/sito-MiBAC/MenuPrincipale/Trasparenza/Open-Data/index.html">Mibac</a> (no dump, 3 stelle)</td>
+        <td data-title="Link alla fonte"><a href="http://www.beniculturali.it/mibac/export/MiBAC/sito-MiBAC/MenuPrincipale/Trasparenza/Open-Data/index.html">Mibac</a> (no dump, via API)</td>
+        <td data-title="Note">accessibile via API</td>
     </tr>
     <tr id="trattati">
         <td data-title="Categoria">Affari esteri</td>
@@ -208,7 +221,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Settimanale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info"><a href="http://itra.esteri.it/Default.aspx">Itra</a> (no dump)</td>
+        <td data-title="Link alla fonte"><a href="http://itra.esteri.it/Default.aspx">Itra</a> (no dump)</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr id="censimento">
         <td data-title="Categoria">Statistiche nazionali</td>
@@ -218,8 +232,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">ISTAT</td>
         <td data-title="Frequenza aggiornamento">Decennale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 4 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">Non è chiaro, da verificare</td>
     </tr>
     <tr id="malattie_professionali">
         <td data-title="Categoria">Welfare</td>
@@ -230,7 +245,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Semestrale</td>
         <td data-title="Livello minimo">4 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
-        <td data-title="Info"><a href="http://dati.inail.it/opendata/default/Daticadenzasemestralemp/index.html">INAIL Open Data</a></td>
+        <td data-title="Link alla fonte"><a href="http://dati.inail.it/opendata/default/Daticadenzasemestralemp/index.html">INAIL Open Data</a></td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr id="efficientamento_energetico">
         <td data-title="Categoria">Energia</td>
@@ -241,7 +257,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr id="DOP">
         <td data-title="Categoria">Agricoltura</td>
@@ -252,7 +269,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Ad ogni modifica appportata ai disciplinari</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr id="agrit">
         <td data-title="Categoria">Agricoltura</td>
@@ -263,7 +281,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">4 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
-        <td data-title="Info"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8131">OpenData Agricoltura</a></td>
+        <td data-title="Link alla fonte"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8131">OpenData Agricoltura</a></td>
+        <td data-title="Note">Anche 5 stelle</td>
     </tr>
     <tr id="agrometeo">
         <td data-title="Categoria">Agricoltura</td>
@@ -274,7 +293,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Giornaliero</td>
         <td data-title="Livello minimo">4 &#9733; <br/> 3 &#8226;</td>
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
-        <td data-title="Info"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8121">OpenData Agricoltura</a></td>
+        <td data-title="Link alla fonte"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8121">OpenData Agricoltura</a></td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr id="giornale_di_bordo">
         <td data-title="Categoria">Agricoltura</td>
@@ -283,9 +303,10 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Novembre 2014</td>
         <td data-title="Chi">Ministero dell'Agricoltura</td>
         <td data-title="Frequenza aggiornamento">Mensile</td>
-        <td data-title="Livello minimo">4 &#9733; <br/> 3 &#8226;</td>
+        <td data-title="Livello minimo">4 &#9733; <br/> 4 &#8226;</td>
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
-        <td data-title="Info"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8328">OpenData Agricoltura</a></td>
+        <td data-title="Link alla fonte"><a href="https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8328">OpenData Agricoltura</a></td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr id="sicurezza_scuole">
         <td data-title="Categoria">Educazione</td>
@@ -296,7 +317,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">ItaliaSicura forse ha dati parziali</td>
     </tr>
     <tr class="i"  id="anagrafe_scuole">
         <td data-title="Categoria">Educazione</td>
@@ -306,8 +328,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">MIUR</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
-        <td data-title="Info"><a href="http://archivio.pubblica.istruzione.it/scuola_in_chiaro/open_data/index.html">Miur scuola in chiaro</a> (2012)</td>
+        <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
+        <td data-title="Link alla fonte"><a href="http://cercalatuascuola.istruzione.it/cercalatuascuola/opendata/">Miur Scuola in chiaro</a> (11/2015)</td>
+        <td data-title="Note"> Manca il dato sulle attrezzature multimediali</td>
     </tr>
     <tr id="spese_scuole">
         <td data-title="Categoria">Educazione</td>
@@ -317,8 +340,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">MIUR</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
-        <td data-title="Info"><a href="http://archivio.pubblica.istruzione.it/scuola_in_chiaro/open_data/index.html">Miur scuola in chiaro</a> (2012)</td>
+        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr class="i" id="libri">
         <td data-title="Categoria">Educazione</td>
@@ -329,7 +353,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr class="i" id="banda_larga">
         <td data-title="Categoria">Infrastrutture</td>
@@ -339,8 +364,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">Infratel per conto del Ministero dello Sviluppo Economico</td>
         <td data-title="Frequenza aggiornamento">Mensile</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
+        <td data-title="Link alla fonte"><a href="http://www.infratelitalia.it/cosa-facciamo/#open-data" >Infratel</a></td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr class="i" id="edifici_pubblici">
         <td data-title="Categoria">Infrastrutture</td>
@@ -350,8 +376,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">Comuni e Agenzia del Demanio</td>
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
+        <td data-title="Link alla fonte"><a href="http://dati.agenziademanio.it/" >OpenDemanio</a></td>
+        <td data-title="Note">Da verificare le info sugli edifici privati</td>
     </tr>
     <tr class="i" id="vincoli">
         <td data-title="Categoria">Dati territoriali</td>
@@ -362,7 +389,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr class="i" id="cap">
         <td data-title="Categoria">Dati territoriali</td>
@@ -373,7 +401,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info"><a href="http://www.poste-impresa.it/online/pmi/postali/accessori/cap_zone.shtml">Poste italiane</a></td>
+        <td data-title="Link alla fonte"><a href="http://www.poste-impresa.it/online/pmi/postali/accessori/cap_zone.shtml">Poste italiane</a></td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr class="i" id="puc">
         <td data-title="Categoria">Dati territoriali</td>
@@ -384,7 +413,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr class="i" id="grafo_strade">
         <td data-title="Categoria">Dati territoriali</td>
@@ -395,7 +425,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
     <tr class="i" id="toponomastica">
         <td data-title="Categoria">Dati territoriali</td>
@@ -406,7 +437,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Frequenza aggiornamento">Annuale</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info">&nbsp;</td>
+        <td data-title="Link alla fonte">&nbsp;</td>
+        <td data-title="Note">&nbsp;</td>
     </tr>
         </tbody>
     </table>
@@ -429,9 +461,9 @@ document.getElementById("perc").innerHTML=100*(totOpen/total).toFixed(2);
 
 <h3>Credits</h3>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; text-align:center;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">agendaOpenData</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://stefanosabatini.eu/agendaOpenData/" property="cc:attributionName" rel="cc:attributionURL">Stefano Sabatini</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/sabas/agendaOpenData/issues" rel="cc:morePermissions">the issues page</a>.
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">agendaOpenData</span> realizzata da <a xmlns:cc="http://creativecommons.org/ns#" href="http://stefanosabatini.eu/agendaOpenData/" property="cc:attributionName" rel="cc:attributionURL">Stefano Sabatini</a> e <a href="http://www.dagoneye.it/" property="cc:attributionName" rel="cc:attributionURL">Matteo Brunati</a> e distribuito con licenza <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/sabas/agendaOpenData/issues" rel="cc:morePermissions">the issues page</a>.
 <br/>
-<p>Il documento da cui sono tratte le informazioni dal titolo <a href="agendanazionalepatrimioniopubblico2014.pdf">"Agenda nazionale per la valorizzazione del patrimonio informativo pubblico 2014"</a> è pubblicato dall'<a href="http://www.agid.gov.it/">AgID</a> ai sensi dell'<a href="http://www.agid.gov.it/cad/accesso-telematico-riutilizzo-dati-pubbliche-amministrazioni">articolo 52</a>, comma 7, del Codice dell'Amministrazione Digitale.</p>
+<p>Il documento da cui sono tratte le informazioni dal titolo <a href="http://www.agid.gov.it/sites/default/files/documenti_indirizzo/agendanazionalepatrimioniopubblico2014.pdf">"Agenda nazionale per la valorizzazione del patrimonio informativo pubblico 2014"</a> è pubblicato dall'<a href="http://www.agid.gov.it/">AgID</a> ai sensi dell'<a href="http://www.agid.gov.it/cad/accesso-telematico-riutilizzo-dati-pubbliche-amministrazioni">articolo 52</a>, comma 7, del Codice dell'Amministrazione Digitale.</p>
 <p>Immagini: da Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/File:Art%C3%ADculo_bueno.svg">Articulo bueno</a> e <a href="https://commons.wikimedia.org/wiki/File:Symbol_unrelated.svg">Symbol unrelated</a>, <a href="http://commons.wikimedia.org/wiki/File:Yellow_check.svg">Yellow check</a>.</p>
 </body>
 </html>
