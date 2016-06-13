@@ -4,14 +4,14 @@
 <head>
     <meta charset='UTF-8'>
     
-    <title>Agenda nazionale Open Data - G8</title>
+    <title>Monotoraggio dell'agenda nazionale Open Data - Dati G8</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
     *{font-family:sans-serif; font-size:10pt;}
 
-table{max-width:1024px; margin:0 auto;}
+table{max-width:1280px; margin:0 auto;}
 .i{font-style:italic;}
 .i th{font-style:normal;}
 td{min-height:20px; border-bottom:1px solid black;}
@@ -82,8 +82,10 @@ http://css-tricks.com/responsive-data-tables/
 <body>
     <div id="page-wrap">
 
-<h1>AGENDA NAZIONALE PER LA VALORIZZAZIONE DEL PATRIMONIO INFORMATIVO PUBBLICO (ANNO 2014) - G8</h1>
-<p>Dataset “chiave” individuati dal piano nazionale del G8</p>
+<h1>Monitoraggio apertura dati dal piano nazionale del G8</h1>
+<p>Dataset “chiave” individuati dal piano nazionale del G8, citati <a href="http://www.agid.gov.it/sites/default/files/documenti_indirizzo/agendanazionalepatrimioniopubblico2014.pdf" >a pagina 20 del documento</a>.
+<br/>
+A che punto siamo con il rilascio dei dati? <br/>Aggiornamento del 13/6/2016 </p>
 <p>Vai a "<a href="index.html">Dataset “chiave” da rilasciare con relativo cronoprogramma</a>".</p>
     <table>
         <thead>
@@ -94,7 +96,8 @@ http://css-tricks.com/responsive-data-tables/
         <th>Chi</th>
         <th>Livello minimo</th>
         <th>Rilasciato?</th>
-        <th>Info</th>
+        <th>Link alla fonte</th>
+        <th>Note</th>
         </tr>
         </thead>
         <tbody>
@@ -105,7 +108,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">ISTAT</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info"></td>
+        <td data-title="Link alla fonte"></td>
+        <td data-title="Note"></td>
+
     </tr>
     <tr id="mappe">
         <td data-title="Dataset">Mappe nazionali</td>
@@ -114,7 +119,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">Regioni</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
-        <td data-title="Info"><a href="http://www.centrointerregionale-gis.it/DBPrior/DBPrior1.asp">CISIS</a> (aggiornato al 2007, confini al 1991)</td>
+        <td data-title="Link alla fonte"><a href="http://www.centrointerregionale-gis.it/DBPrior/DBPrior1.asp">CISIS</a> (aggiornato al 2007, confini al 1991)</td>
+        <td data-title="Note"></td>
     </tr>
     <tr id="elezioni">
         <td data-title="Dataset">Dati elettorali</td>
@@ -123,7 +129,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">Ministero Interno</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
-        <td data-title="Info"><a href="http://elezioni.interno.it/opendata.html">Ministero dell'Interno</a></td>
+        <td data-title="Link alla fonte"><a href="http://elezioni.interno.it/opendata.html">Ministero dell'Interno</a></td>
+        <td data-title="Note"></td>
     </tr>
     <tr id="bilanci">
         <td data-title="Dataset">Bilanci pubblici</td>
@@ -131,8 +138,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Luglio 2014</td>
         <td data-title="Chi">Ragioneria Generale dello Stato</td>
         <td data-title="Livello minimo">5 &#9733; <br/> 3 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info"></td>
+        <td data-title="Rilasciato?"><img src="yep.png" class="yep"/></td>
+        <td data-title="Link alla fonte"><a href="http://www.rgs.mef.gov.it/VERSIONE-I/OPENDATA/SpeseBS/" >Ragioneria dello Stato</a></td>
+        <td data-title="Note"></td>
     </tr>
     <tr id="normattiva">
         <td data-title="Dataset">Normattiva</td>
@@ -141,7 +149,8 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Chi">Poligrafico dello Stato</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
         <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info"></td>
+        <td data-title="Link alla fonte"></td>
+        <td data-title="Note"></td>
     </tr>
     <tr id="inquinanti">
         <td data-title="Dataset">Sostanze inquinanti per l’ambiente</td>
@@ -149,8 +158,9 @@ http://css-tricks.com/responsive-data-tables/
         <td data-title="Termine previsto di rilascio">Dicembre 2014</td>
         <td data-title="Chi">ISPRA</td>
         <td data-title="Livello minimo">3 &#9733; <br/> 2 &#8226;</td>
-        <td data-title="Rilasciato?"><img src="nope.png" class="nope"/></td>
-        <td data-title="Info"></td>
+        <td data-title="Rilasciato?"><img src="almost.png" class="almost"/></td>
+        <td data-title="Link alla fonte"><a href="http://www.isprambiente.gov.it/it/amministrazione-trasparente/altri-contenuti/g8-open-data/open-data-ispra" >Open ISPRA</a></td>
+        <td data-title="Note"> dati aggiornati al 2010, 2011</td>
     </tr>
         </tbody>
     </table>
@@ -173,9 +183,9 @@ document.getElementById("perc").innerHTML=100*(totOpen/total).toFixed(2);
 
 <h3>Credits</h3>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; text-align:center;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">agendaOpenData</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://stefanosabatini.eu/agendaOpenData/" property="cc:attributionName" rel="cc:attributionURL">Stefano Sabatini</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/sabas/agendaOpenData/issues" rel="cc:morePermissions">the issues page</a>.
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">agendaOpenData</span> realizzata da <a xmlns:cc="http://creativecommons.org/ns#" href="http://stefanosabatini.eu/agendaOpenData/" property="cc:attributionName" rel="cc:attributionURL">Stefano Sabatini</a> e <a href="http://www.dagoneye.it/" property="cc:attributionName" rel="cc:attributionURL">Matteo Brunati</a> e distribuito con licenza <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/sabas/agendaOpenData/issues" rel="cc:morePermissions">the issues page</a>.
 <br/>
-<p>Il documento da cui sono tratte le informazioni dal titolo <a href="agendanazionalepatrimioniopubblico2014.pdf">"Agenda nazionale per la valorizzazione del patrimonio informativo pubblico 2014"</a> è pubblicato dall'<a href="http://www.agid.gov.it/">AgID</a> ai sensi dell'<a href="http://www.agid.gov.it/cad/accesso-telematico-riutilizzo-dati-pubbliche-amministrazioni">articolo 52</a>, comma 7, del Codice dell'Amministrazione Digitale.</p>
+<p>Il documento da cui sono tratte le informazioni dal titolo <a href="http://www.agid.gov.it/sites/default/files/documenti_indirizzo/agendanazionalepatrimioniopubblico2014.pdf">"Agenda nazionale per la valorizzazione del patrimonio informativo pubblico 2014"</a> è pubblicato dall'<a href="http://www.agid.gov.it/">AgID</a> ai sensi dell'<a href="http://www.agid.gov.it/cad/accesso-telematico-riutilizzo-dati-pubbliche-amministrazioni">articolo 52</a>, comma 7, del Codice dell'Amministrazione Digitale.</p>
 <p>Immagini: da Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/File:Art%C3%ADculo_bueno.svg">Articulo bueno</a> e <a href="https://commons.wikimedia.org/wiki/File:Symbol_unrelated.svg">Symbol unrelated</a>, <a href="http://commons.wikimedia.org/wiki/File:Yellow_check.svg">Yellow check</a>.</p>
 </body>
 </html>
